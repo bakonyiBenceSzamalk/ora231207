@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Verdana, sans-serif;
+    color: beige;
+    font-size: 10pt;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url('../images/black.png');
+}
+
+#fotartalom {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#witcher {
+    height: 400px;
+    width: auto;
+    margin: 5px;
+}
+
+main {
+    background-color: rgb(211, 211, 211);
+    width: 90%;
+    max-width: 900px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main div {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+header {
+    background-image: url('../images/game.jpg');
+    background-size: cover;
+    height: 300px;
+}
+
+nav {
+    background-color: rgb(51, 51, 51);
+    padding: 10px;
+    font-weight: bold;
+}
+
+a {
+    padding: 10px;
+    border-right: 1px grey solid;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: orange;
+}
+
+aside *{
+    color: black;
+    margin: 10px;
+}
+
+aside p {
+    text-align: justify;
+    font-size: 10px;
+}
+
+aside h1 {
+    font-size: 15px;
+}
+
+ul li {
+    list-style: square;
+    list-style-position: inside;
+}
+
+footer{
+    background-color: orange;
+    text-align: center;
+    color: black;
+}
+
+footer *{
+    color: black;
+}
+
+@media only screen and (max-width: 700px) {
+    nav a{
+        display: block;
+    }
+
+    main div{
+        display: block;
+    }
+}
